@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" class="no-js" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Interactive Web Lab — The Creative Dimension · Danielle Julian</title>
+  <meta name="description" content="Responsive coded experiences that move beyond static graphics into interaction, game logic, storytelling, and accessibility.">
+  <meta name="theme-color" content="#180c23">
+  <meta property="og:title" content="Interactive Web Lab — The Creative Dimension · Danielle Julian">
+  <meta property="og:description" content="Responsive coded experiences that move beyond static graphics into interaction, game logic, storytelling, and accessibility.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <script>(function(){var d=document.documentElement,s={};d.classList.remove('no-js');d.classList.add('has-js');try{s=JSON.parse(localStorage.getItem('creative-dimension:settings:v1')||'{}')}catch(e){}var rm=s.motion==='reduce'||(s.motion!=='full'&&window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);d.dataset.motion=rm?'reduce':'full';})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script type="module" src="../assets/js/app.js"></script>
+</head>
+<body class="page page--project" data-page="project">
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+  <symbol id="i-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+  <symbol id="i-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></symbol>
+  <symbol id="i-display" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M9 20h6M12 16.5V20"/><path d="M7.5 13l3-3 2 2 4-4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19l7-7"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/><path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/><path d="M5 15.5l.6 1.4 1.4.6-1.4.6L5 19.5l-.6-1.4L3 17.5l1.4-.6z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 4h11L21 9l-9 11L3 9z"/><path d="M3 9h18M9 4l3 16 3-16"/></symbol>
+  <symbol id="i-motion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 9h.01M12 9h.01M16 9h.01M8 15h8"/></symbol>
+  <symbol id="i-controls" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="10" rx="5"/><path d="M7 10v4M5 12h4M15.5 11h.01M18 13h.01"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10-6.5z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6.5L20.5 7"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M5.2 8.6h3v10h-3zM6.7 4.2a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10.2 8.6h2.9V10h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.6 2 3.6 4.6v5.56h-3V13.7c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62v4.98h-3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-mouse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="6.5" y="3" width="11" height="18" rx="5.5"/><path d="M12 7v3"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11M12 10V4.5a1.5 1.5 0 0 1 3 0V11M15 10.5V6.5a1.5 1.5 0 0 1 3 0v7.5a7 7 0 0 1-7 7h-.5a6 6 0 0 1-5-2.7L3.3 14.6a1.5 1.5 0 0 1 2.4-1.8L9 15.5V8.5a1.5 1.5 0 0 1 3 0"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5a1.5 1.5 0 0 0-1.5-1.5H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></symbol>
+  <symbol id="logo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M32 5c6 7 6.5 15 0 22C25.5 20 26 12 32 5z"/><path d="M32 59c6-7 6.5-15 0-22-6.5 7-6 15 0 22z"/>
+    <path d="M5 32c7-6 15-6.5 22 0-7 6.5-15 6-22 0z"/><path d="M59 32c-7-6-15-6.5-22 0 7 6.5 15 6 22 0z"/>
+    <path d="M32 18l14 14-14 14-14-14z" stroke-width="1.6" opacity=".8"/>
+    <path d="M18.5 18.5c4 1.2 6 3.6 6.5 6.5-3-.4-5.4-2.5-6.5-6.5zM45.5 18.5c-4 1.2-6 3.6-6.5 6.5 3-.4 5.4-2.5 6.5-6.5zM18.5 45.5c4-1.2 6-3.6 6.5-6.5-3 .4-5.4 2.5-6.5 6.5zM45.5 45.5c-4-1.2-6-3.6-6.5-6.5 3 .4 5.4 2.5 6.5 6.5z" stroke-width="1.6"/>
+    <circle cx="32" cy="32" r="3.2" fill="currentColor" stroke="none"/>
+  </symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="scenery" aria-hidden="true"><div class="scenery__glow"></div><div class="scenery__arch"></div><svg class="scenery__branch" viewBox="0 0 360 260" aria-hidden="true">
+  <defs><radialGradient id="bl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd4e8"/><stop offset=".6" stop-color="#ef6fa8"/><stop offset="1" stop-color="#b8326f" stop-opacity="0"/></radialGradient></defs>
+  <path d="M-10 40 C 60 50 110 70 160 110 S 250 170 330 160" stroke="#3a2030" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M120 85 C 140 60 170 45 200 40 M190 140 C 210 175 240 195 270 200 M70 52 C 80 30 95 18 120 10" stroke="#3a2030" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="url(#bl)"><circle cx="200" cy="40" r="26"/><circle cx="120" cy="12" r="22"/><circle cx="270" cy="198" r="24"/><circle cx="330" cy="160" r="28"/><circle cx="160" cy="108" r="22"/><circle cx="235" cy="165" r="18"/><circle cx="60" cy="48" r="20"/><circle cx="300" cy="185" r="16"/><circle cx="95" cy="70" r="14"/></g>
+</svg><canvas class="scenery__canvas" data-ambient></canvas></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../index.html" aria-label="Berry Vibes Studio — home">
+      <svg class="brand__mark" aria-hidden="true"><use href="#logo"></use></svg>
+      <span class="brand__text" aria-hidden="true"><span class="brand__name">Berry Vibes</span><span class="brand__sub">Studio</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list" id="site-nav-list"><li><a class="site-nav__link" href="../index.html">Home</a></li><li><a class="site-nav__link" href="../work.html" aria-current="page">Work</a></li><li><a class="site-nav__link" href="../about.html">About</a></li><li><a class="site-nav__link" href="../resume.html">Resume</a></li><li><a class="site-nav__link" href="../contact.html">Contact</a></li></ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn js-only" type="button" data-sound-toggle aria-pressed="false" aria-label="Sound off — turn on ambient sound">
+        <svg data-icon-off aria-hidden="true"><use href="#i-sound-off"></use></svg>
+        <svg data-icon-on hidden aria-hidden="true"><use href="#i-sound-on"></use></svg>
+      </button>
+      <button class="quality-btn js-only" type="button" data-open-settings aria-haspopup="dialog">
+        <svg aria-hidden="true" focusable="false"><use href="#i-display"></use></svg><span class="quality-btn__label">Graphics: <span data-quality-label>Balanced</span></span><span class="visually-hidden"> — open Experience Settings</span>
+      </button>
+      <button class="icon-btn menu-btn js-only" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav-list" aria-label="Menu"><svg aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="page-main" tabindex="-1">
+<section class="page-hero"><div class="container">
+  <p class="breadcrumb"><a class="link-arrow link-arrow--back" href="../work.html"><svg aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg>Back to Work</a></p>
+  <div class="project-hero">
+    <div>
+      <p class="eyebrow">Digital Worlds • Web Design • Interaction Design</p>
+      <h1 class="project-hero__title">Interactive Web Lab</h1>
+      
+      <p class="project-hero__disciplines">HTML • CSS • JavaScript • Creative code</p>
+      <p class="project-hero__summary">Responsive coded experiences that move beyond static graphics into interaction, game logic, storytelling, and accessibility.</p>
+      <p class="status-note"><svg aria-hidden="true" focusable="false"><use href="#i-info"></use></svg><span>The source portfolio documents these coded projects in text only. Screenshots and live links can be added to data/projects.json when available.</span></p>
+      <p class="settings__hint">Source: Master Portfolio p. 11; Creative Resume (Internet Studio Web Projects).</p>
+    </div>
+    <div class="project-hero__media" data-reveal><span class="art-frame"><span class="art-frame__mat" style="aspect-ratio:4/3"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">HTML • CSS • JavaScript • Creative code</span><span class="text-art__title">Interactive Web Lab</span></span></span></span></div>
+  </div>
+</div></section>
+<section class="section" aria-labelledby="lab-h"><div class="container">
+  <div class="section__head"><p class="eyebrow">HTML • CSS • JavaScript</p><h2 class="section__title" id="lab-h">Eight coded <em>experiences</em></h2>
+  <p class="lede">Game logic, drag-and-drop puzzles, nonlinear storytelling, concrete poetry and semantic web design — built by hand in HTML, CSS and JavaScript.</p></div>
+  <ul class="weblab-grid" role="list"><li id="history-battle-academy" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">HTML • CSS • JS</span><span class="text-art__title">History Battle Academy</span><span class="text-art__text">Multiple-choice battles, region modes, final challenge, explanations, best-score saving.</span></span></span></span></li><li id="ccd-recipe-battle" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Creative code</span><span class="text-art__title">CCD Recipe Battle</span><span class="text-art__text">Comparison puzzle with scoring, progress, drag-and-drop, and poem reveal.</span></span></span></span></li><li id="cozy-recipe-quilt" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Interaction</span><span class="text-art__title">Cozy Recipe Quilt</span><span class="text-art__text">Twelve draggable recipe riddles with touch, click, and keyboard support.</span></span></span></span></li><li id="customizable-quilt" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Dynamic state</span><span class="text-art__title">Customizable Recipe Quilt</span><span class="text-art__text">User-selected recipes determine puzzle pieces, clues, colors, and poem order.</span></span></span></span></li><li id="hypertext-narrative" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Web storytelling</span><span class="text-art__title">Hypertext Narrative</span><span class="text-art__text">A nonlinear multi-page story about creative growth, doubts, audience, and future goals.</span></span></span></span></li><li id="a-web-that-opens" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Concrete poetry</span><span class="text-art__title">Concrete Poem: A Web That Opens</span><span class="text-art__text">Typography and spatial layout turn the webpage into a visual doorway.</span></span></span></span></li><li id="new-york-texas" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Concrete poetry</span><span class="text-art__title">Concrete Poem: New York → Texas</span><span class="text-art__text">A visual journey from quiet beginnings to greater confidence and visibility.</span></span></span></span></li><li id="html-css-resume" data-reveal><span class="art-frame"><span class="art-frame__mat"><span class="text-art"><span class="text-art__code">&lt;/&gt;</span><span class="text-art__tag">Semantic web</span><span class="text-art__title">HTML/CSS Resume</span><span class="text-art__text">Professional resume page using hierarchy, typography, and responsive styling.</span></span></span></span></li></ul>
+</div></section><section class="section" aria-labelledby="related-h"><div class="container"><div class="section__head"><p class="eyebrow">Keep exploring</p><h2 class="section__title" id="related-h">Related <em>projects</em></h2></div><ul class="related" role="list"><li class="work-card" data-categories="web-design branding digital-worlds" data-reveal><a class="work-card__link" href="../projects/berry-vibes-cookbook.html"><span class="art-frame"><span class="art-frame__mat" style="--ar:0.773"><img src="../assets/img/work/cookbook-writing-portfolio-sm.webp" width="480" height="621" alt="" loading="lazy" decoding="async"></span></span><span class="work-card__plate"><span class="work-card__title">Berry Vibes Digital Cookbook</span><span class="work-card__meta">Web Design • Branding • Digital Worlds</span></span></a></li><li class="work-card" data-categories="ux-ui web-design interaction" data-reveal><a class="work-card__link" href="../projects/recipe-builder.html"><span class="art-frame"><span class="art-frame__mat" style="--ar:0.720"><img src="../assets/img/work/ccd-battle-arena-sm.webp" width="480" height="720" alt="" loading="lazy" decoding="async"></span></span><span class="work-card__plate"><span class="work-card__title">Berry Vibes Recipe Builder + Battle UI</span><span class="work-card__meta">UX/UI Design • Web Design • Interaction Design</span></span></a></li><li class="work-card" data-categories="interaction ux-ui" data-reveal><a class="work-card__link" href="../projects/crosswalks.html"><span class="art-frame"><span class="art-frame__mat" style="--ar:1.330"><img src="../assets/img/work/crosswalks-area-of-interest-sm.webp" width="480" height="360" alt="" loading="lazy" decoding="async"></span></span><span class="work-card__kind"><span class="chip">UX case study</span></span><span class="work-card__plate"><span class="work-card__title">Crosswalks That Explain Themselves</span><span class="work-card__meta">Interaction Design • UX/UI Design</span></span></a></li></ul></div></section>
+<div class="container"><nav class="pager" aria-label="More projects">
+  <a class="link-arrow link-arrow--back" href="../projects/recipe-builder.html"><svg aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg>Previous: Berry Vibes Recipe Builder + Battle UI</a>
+  <a class="link-arrow" href="../projects/nyc-2028.html">Next: NYC 2028 — Liberty Lights the World<svg aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg></a>
+</nav></div></main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="../index.html" aria-label="Berry Vibes Studio — home"><svg class="brand__mark" aria-hidden="true"><use href="#logo"></use></svg><span class="brand__text" aria-hidden="true"><span class="brand__name">Berry Vibes</span><span class="brand__sub">Studio</span></span></a>
+        <p class="site-footer__tag">Playful Systems. Purposeful Stories.</p>
+      </div>
+      <nav aria-label="Footer"><h2>Explore</h2><ul>
+        <li><a href="../work.html">All work</a></li><li><a href="../visual-design.html">Visual Design</a></li>
+        <li><a href="../interactive-design.html">Interactive Design</a></li><li><a href="../digital-worlds.html">Digital Worlds</a></li></ul></nav>
+      <div><h2>Connect</h2><ul>
+        <li><a href="mailto:daniellejulian1011@gmail.com">daniellejulian1011@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/danielle-julian-55664a25b" rel="noopener" target="_blank">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><a href="../assets/docs/Danielle-Julian-Creative-Resume.pdf" download>Download résumé (PDF)</a></li></ul></div>
+    </div>
+    <div class="site-footer__legal"><span>© 2026 Danielle Julian · Berry Vibes Studio. All portfolio artwork © Danielle Julian.</span><a href="../CREDITS.html">Credits &amp; licences</a></div>
+  </div>
+</footer>
+
+<dialog class="settings-dialog" id="settings-dialog" aria-labelledby="settings-title">
+  <div class="settings__head">
+    <h2 id="settings-title">Experience Settings</h2>
+    <button class="icon-btn" type="button" data-close-settings aria-label="Close settings"><svg aria-hidden="true" focusable="false"><use href="#i-close"></use></svg></button>
+  </div>
+  <div class="settings__body">
+    <div class="settings__group">
+      <fieldset class="segmented">
+        <legend class="settings__label">Graphics quality</legend>
+        <label class="segmented__opt"><input type="radio" name="quality" value="lite"><span><svg aria-hidden="true" focusable="false"><use href="#i-leaf"></use></svg>Lite<small>Fastest</small></span></label>
+        <label class="segmented__opt"><input type="radio" name="quality" value="balanced"><span><svg aria-hidden="true" focusable="false"><use href="#i-sparkles"></use></svg>Balanced<small>Recommended</small></span></label>
+        <label class="segmented__opt"><input type="radio" name="quality" value="high"><span><svg aria-hidden="true" focusable="false"><use href="#i-gem"></use></svg>High<small>Most detail</small></span></label>
+      </fieldset>
+      <p class="settings__hint" data-quality-hint></p>
+    </div>
+    <div class="settings__group">
+      <div class="setting-row">
+        <span class="setting-row__text" id="lbl-sound"><svg aria-hidden="true" focusable="false"><use href="#i-sound-on"></use></svg>Ambient sound</span>
+        <button class="switch" type="button" role="switch" aria-checked="false" aria-labelledby="lbl-sound" data-setting="sound"></button>
+      </div>
+      <p class="settings__hint">Off by default. An original generated soundscape — it never starts on its own.</p>
+      <div class="setting-row">
+        <span class="setting-row__text" id="lbl-motion"><svg aria-hidden="true" focusable="false"><use href="#i-motion"></use></svg>Reduce motion</span>
+        <button class="switch" type="button" role="switch" aria-checked="false" aria-labelledby="lbl-motion" data-setting="motion"></button>
+      </div>
+      <p class="settings__hint" data-motion-hint></p>
+    </div>
+    <div class="settings__group">
+      <details class="controls-guide">
+        <summary><span class="setting-row__text"><svg aria-hidden="true" focusable="false"><use href="#i-controls"></use></svg>Control guide</span><svg aria-hidden="true" focusable="false"><use href="#i-chevron"></use></svg></summary>
+        <dl>
+          <dt>Mouse</dt><dd>Move to look around the courtyard; click a portal to enter it.</dd>
+          <dt><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></dt><dd>Explore the 3D homepage on desktop (optional).</dd>
+          <dt><kbd>Tab</kbd></dt><dd>Move between links, portals and controls. <kbd>Enter</kbd> activates.</dd>
+          <dt><kbd>Esc</kbd></dt><dd>Close menus, dialogs and the artwork viewer; skip the intro.</dd>
+          <dt>Touch</dt><dd>Tap any portal or card. Swipe category filters sideways.</dd>
+          <dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Step through artwork in the viewer.</dd>
+        </dl>
+      </details>
+    </div>
+    <div class="settings__actions">
+      <button class="btn btn--ghost btn--sm" type="button" data-replay-intro><svg aria-hidden="true" focusable="false"><use href="#i-play"></use></svg>Replay intro</button>
+      <button class="btn btn--ghost btn--sm" type="button" data-reset-settings>Reset to defaults</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="lightbox" id="lightbox" aria-label="Artwork viewer">
+  <div class="lightbox__bar">
+    <p class="lightbox__title" data-lb-title></p>
+    <button class="icon-btn" type="button" data-lb-close aria-label="Close viewer"><svg aria-hidden="true" focusable="false"><use href="#i-close"></use></svg></button>
+  </div>
+  <div class="lightbox__stage"><img alt="" decoding="async"></div>
+  <div class="lightbox__foot">
+    <button class="icon-btn" type="button" data-lb-prev aria-label="Previous artwork"><svg aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg></button>
+    <span data-lb-count aria-live="polite"></span>
+    <button class="icon-btn" type="button" data-lb-next aria-label="Next artwork"><svg aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg></button>
+    <span>Click the image to view at 100%</span>
+  </div>
+</dialog>
+</body>
+</html>

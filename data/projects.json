@@ -1,0 +1,1532 @@
+{
+  "_about": "Single source of truth for portfolio content. All wording is taken from Danielle Julian's Master Design Portfolio 2026 (PDF) and Creative Resume (PDF); 'source' cites the portfolio page. Edit this file, then run: python3 tools/build_site.py",
+  "categories": [
+    {
+      "id": "ux-ui",
+      "label": "UX/UI Design",
+      "portal": "interactive"
+    },
+    {
+      "id": "branding",
+      "label": "Branding",
+      "portal": "visual"
+    },
+    {
+      "id": "web-design",
+      "label": "Web Design",
+      "portal": "interactive"
+    },
+    {
+      "id": "interaction",
+      "label": "Interaction Design",
+      "portal": "interactive"
+    },
+    {
+      "id": "advertising",
+      "label": "Advertising",
+      "portal": "visual"
+    },
+    {
+      "id": "visual-design",
+      "label": "Visual Design",
+      "portal": "visual"
+    },
+    {
+      "id": "digital-worlds",
+      "label": "Digital Worlds",
+      "portal": "worlds"
+    }
+  ],
+  "portals": [
+    {
+      "id": "visual",
+      "page": "visual-design.html",
+      "title": "Visual Design",
+      "kicker": "Portal I",
+      "intro": "Branding, visual identity, posters, typography, advertising, photo compositing, and illustration.",
+      "leadsTo": [
+        "Branding",
+        "Visual identity",
+        "Posters",
+        "Typography",
+        "Advertising",
+        "Photo compositing",
+        "Illustration"
+      ],
+      "categories": [
+        "branding",
+        "advertising",
+        "visual-design"
+      ],
+      "preview": "fein",
+      "image": "fein"
+    },
+    {
+      "id": "interactive",
+      "page": "interactive-design.html",
+      "title": "Interactive Design",
+      "kicker": "Portal II",
+      "intro": "UX/UI, product design, web design, user research, interaction design, and prototypes.",
+      "leadsTo": [
+        "UX/UI",
+        "Product design",
+        "Web design",
+        "User research",
+        "Interaction design",
+        "Prototypes"
+      ],
+      "categories": [
+        "ux-ui",
+        "web-design",
+        "interaction"
+      ],
+      "preview": "savesip",
+      "image": "savesip-feature-screens"
+    },
+    {
+      "id": "worlds",
+      "page": "digital-worlds.html",
+      "title": "Digital Worlds",
+      "kicker": "Portal III",
+      "intro": "Interactive websites, creative coding, digital storytelling, educational web games, and experimental digital experiences.",
+      "leadsTo": [
+        "Interactive websites",
+        "Creative coding",
+        "Digital storytelling",
+        "Educational web games",
+        "Experimental experiences"
+      ],
+      "categories": [
+        "digital-worlds"
+      ],
+      "preview": "berry-vibes-cookbook",
+      "image": "cookbook-recipe-sketches"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "savesip",
+      "title": "SaveSip / Cup$i",
+      "kind": "case-study",
+      "categories": [
+        "ux-ui",
+        "branding",
+        "interaction"
+      ],
+      "featured": true,
+      "disciplines": "UX/UI • Product thinking • Branding • Gamification",
+      "summary": "A gamified drink-spending tracker that turns small café purchases into visible savings habits.",
+      "source": "Master Portfolio pp. 4–6, 13; Creative Resume",
+      "caseStudy": {
+        "problem": "Small coffee, boba, and café purchases feel harmless in the moment, but repeated purchases add up. Traditional budgeting tools can feel cold or spreadsheet-heavy.",
+        "direction": "Cup$i evolved into SaveSip: a warmer product story using mascots, challenges, savings feedback, and a community/recipe layer.",
+        "audience": "Audience statements and a persona were developed during research (see the persona artifact below).",
+        "research": "Research before polish: audience statements, notes, personas, low-fidelity flows, and high-fidelity interface planning.",
+        "process": [
+          "Problem",
+          "Audience",
+          "Flow",
+          "Wireframes",
+          "Visual system",
+          "High-fidelity UI"
+        ],
+        "features": [
+          "Tap-to-track or manual drink logging",
+          "Home brew vs. store-bought comparison",
+          "Sip mood, levels, unlockables, and challenges",
+          "Savings dashboard",
+          "Recipe/community content"
+        ],
+        "visual": "Friendly mascots — Sip (“Saving feels good!”) and Spendy (“Overspending hurts!”) — make financial feedback emotionally approachable. The Cup$i logo system carried the original identity.",
+        "goal": "Make saving feel visual, fast, rewarding, and emotionally approachable.",
+        "deliverables": [
+          "Research notes",
+          "Wireframe notes",
+          "Persona",
+          "Interface planning",
+          "Low-fi wireframes",
+          "High-fidelity UI",
+          "Mascots + logo system"
+        ],
+        "status": "Concept case study (academic / independent practice). No launch metrics are claimed."
+      },
+      "images": [
+        {
+          "id": "004-004",
+          "file": "savesip-hifi-flow",
+          "alt": "Five high-fidelity SaveSip phone screens: welcome, tap or manual log, bad alternatives, daily save challenge, and sip and bank profile with a savings chart.",
+          "caption": "High-fidelity interface flow"
+        },
+        {
+          "id": "004-005",
+          "file": "savesip-mascots",
+          "alt": "Two cup mascots: Sip, a happy cup with a coin labelled ‘Saving feels good!’, and Spendy, a worried boba cup labelled ‘Overspending hurts!’.",
+          "caption": "Mascots: Sip and Spendy"
+        },
+        {
+          "id": "005-006",
+          "file": "savesip-research-notes",
+          "alt": "Photograph of handwritten research notes on lined paper.",
+          "caption": "Research notes"
+        },
+        {
+          "id": "005-007",
+          "file": "savesip-wireframe-notes",
+          "alt": "Photograph of handwritten wireframe notes and sketched phone layouts.",
+          "caption": "Wireframe notes"
+        },
+        {
+          "id": "005-008",
+          "file": "savesip-persona",
+          "alt": "Persona sheet for ‘Emily Parker’ with goals, pain points, likes, and dislikes columns.",
+          "caption": "Persona"
+        },
+        {
+          "id": "005-009",
+          "file": "savesip-interface-planning",
+          "alt": "Row of early interface planning frames with drink illustrations.",
+          "caption": "Interface planning"
+        },
+        {
+          "id": "005-010",
+          "file": "savesip-lowfi",
+          "alt": "Six grayscale low-fidelity wireframes on a dark background, starting with a login screen.",
+          "caption": "Low-fidelity wireframes"
+        },
+        {
+          "id": "006-011",
+          "file": "savesip-feature-screens",
+          "alt": "Four SaveSip screens: Sip's Garden home, tap to track, post-sip choice and consequence, and social and recipes.",
+          "caption": "Feature system screens"
+        },
+        {
+          "id": "013-025",
+          "file": "cupsi-logo",
+          "alt": "Cup$i logo: a green drink cup with a dollar sign beside the Cup$i wordmark.",
+          "caption": "Cup$i logo system"
+        }
+      ],
+      "related": [
+        "smartcart",
+        "recipe-builder",
+        "cupsi-identity"
+      ]
+    },
+    {
+      "slug": "smartcart",
+      "title": "SmartCart",
+      "kind": "case-study",
+      "categories": [
+        "ux-ui"
+      ],
+      "featured": true,
+      "disciplines": "UX Research • Product Concept",
+      "summary": "Discovery sprint for faster grocery-list creation, repeat buys, useful customization, and user-controlled smart suggestions.",
+      "source": "Master Portfolio p. 9 (SmartCart Research Packet, Sprint 1, Feb 21 2026); Creative Resume",
+      "caseStudy": {
+        "problem": "Current shopping list apps often feel tap-heavy, overly simplified, and limited to cosmetic customization (themes) rather than functional customization (quantity, units, notes). Some apps ask users to input unreliable information such as item prices, which slows list creation and varies by store, taxes, and promotions.",
+        "audience": "Defining the target audience was itself a research goal: “Use evidence to define target audience, core problem, and MVP scope.”",
+        "researchMeta": [
+          [
+            "Project",
+            "SmartCart (shopping list app with repeat-buy suggestions + item customization)"
+          ],
+          [
+            "Phase",
+            "Discovery / Research"
+          ],
+          [
+            "Primary method",
+            "Semi-structured interviews (qualitative)"
+          ],
+          [
+            "Supporting methods",
+            "Competitive audits (direct + indirect), secondary research (reviews + literature)"
+          ],
+          [
+            "Sprint length",
+            "7 days (recommended)"
+          ]
+        ],
+        "goals": [
+          "Understand how people currently plan grocery trips and create lists.",
+          "Identify the top friction points in list creation and in-store use.",
+          "Learn how people handle repeat buys / staples and how they decide restock timing.",
+          "Define trust boundaries for smart suggestions vs auto-add behavior.",
+          "Use evidence to define target audience, core problem, and MVP scope."
+        ],
+        "questions": [
+          "What triggers a grocery trip and how do people plan it?",
+          "How do people keep track of staples and repeat items?",
+          "What makes list creation feel slow or annoying?",
+          "What item-level details do users actually want to save (quantity, units, notes, store)?",
+          "What makes smart suggestions feel helpful vs intrusive?"
+        ],
+        "hypotheses": [
+          "People do not mind making lists; they mind rewriting the same staples repeatedly.",
+          "Too many taps (or high effort) causes users to fall back to Notes/Reminders.",
+          "Functional customization matters more than theme customization.",
+          "Smart suggestions are welcomed when they are transparent and user-controlled."
+        ],
+        "focus": [
+          "Semi-structured interview planning",
+          "Competitive audits + secondary research",
+          "Repeat-buy behavior and staple routines",
+          "Functional customization: quantity, units, notes, store",
+          "Trust boundaries for suggestions vs. auto-add",
+          "Affinity mapping, HMW questions, and MVP prioritization"
+        ],
+        "principle": "Smart suggestions should be transparent, useful, and controlled by the user.",
+        "next": "The documented work covers the discovery sprint: planning, research questions, and hypotheses. Interview findings, wireframes, and high-fidelity screens are not part of the source material yet, so they are shown here as next steps rather than completed work.",
+        "status": "Research-stage product concept. Hypotheses are untested; no results or metrics are claimed."
+      },
+      "images": [
+        {
+          "id": "009-017",
+          "file": "smartcart-research-packet",
+          "alt": "First page of the SmartCart Research Packet: project table, research overview, research goals, key research questions, and hypotheses to test.",
+          "caption": "SmartCart Research Packet — Discovery / Research Sprint 1"
+        }
+      ],
+      "related": [
+        "savesip",
+        "crosswalks",
+        "recipe-builder"
+      ]
+    },
+    {
+      "slug": "crosswalks",
+      "title": "Crosswalks That Explain Themselves",
+      "altTitle": "nowWhat",
+      "kind": "case-study",
+      "categories": [
+        "interaction",
+        "ux-ui"
+      ],
+      "featured": true,
+      "disciplines": "Interaction • IoT • Smart city",
+      "summary": "A smart-city proposition focused on trust, clarity, accessibility, and fast public decisions.",
+      "source": "Master Portfolio p. 10; Creative Resume",
+      "caseStudy": {
+        "problem": "The project focuses on Smart City pedestrian crossings as an IoT interaction problem. The core issue is whether users can understand and trust smart systems in fast public moments.",
+        "audience": "Pedestrians at public crossings — a public-facing context where decisions are fast and accessibility needs vary.",
+        "research": "The project explores how small, clear interface cues can make crossings feel safer and more legible.",
+        "proposal": "nowWhat — a public-facing pedestrian crossing interface with small, context-aware intent cues. The cue appears only when normal crossing logic changes or extra clarity is needed. The system supports confidence without clutter or requiring a phone app.",
+        "states": [
+          [
+            "Approach / idle",
+            "The crossing is approached; the display stays quiet unless clarity is needed."
+          ],
+          [
+            "Waiting",
+            "The pedestrian is waiting for the crossing to change."
+          ],
+          [
+            "Walk",
+            "Crossing is permitted."
+          ],
+          [
+            "Failure / fallback",
+            "Normal crossing logic has changed or the system is uncertain; the interface explains instead of failing silently."
+          ]
+        ],
+        "uiLook": [
+          "Public-facing display",
+          "High-contrast symbols",
+          "Minimal text",
+          "Optional audio support"
+        ],
+        "status": "Concept proposal. Interface states are defined; no deployment or test results are claimed."
+      },
+      "images": [
+        {
+          "id": "010-018",
+          "file": "crosswalks-area-of-interest",
+          "alt": "Slide ‘1. IoT Area of Interest’ with a working opening statement about smart city pedestrian crossings.",
+          "caption": "1. IoT area of interest"
+        },
+        {
+          "id": "010-019",
+          "file": "crosswalks-proposal",
+          "alt": "Slide ‘5. New IoT Proposal’ describing nowWhat, a crossing interface with context-aware intent cues.",
+          "caption": "5. New IoT proposal — nowWhat"
+        },
+        {
+          "id": "010-020",
+          "file": "crosswalks-interface-details",
+          "alt": "Slide ‘7. Interface Details’ listing UI look and feel and the four screen states.",
+          "caption": "7. Interface details"
+        }
+      ],
+      "related": [
+        "smartcart",
+        "savesip",
+        "web-lab"
+      ]
+    },
+    {
+      "slug": "berry-vibes-cookbook",
+      "title": "Berry Vibes Digital Cookbook",
+      "kind": "project",
+      "categories": [
+        "web-design",
+        "branding",
+        "digital-worlds"
+      ],
+      "featured": true,
+      "disciplines": "Web • Brand • Illustration • Storytelling",
+      "summary": "A continuous recipe website combining original recipe sketches, branding, typography, information design, and animated scrolling.",
+      "body": [
+        "A continuous digital cookbook built from personal recipes, playful branding, custom recipe sketches, and animated web interactions.",
+        "From placeholders to original recipe sketches: stock food images were temporary during development; the final visual direction replaced them with custom hand-drawn recipe artwork so the website feels authored, cohesive, and connected to the Berry Vibes identity.",
+        "Project story: Concept → Mockups → Prototype → Custom illustration → Final website."
+      ],
+      "source": "Master Portfolio p. 7",
+      "images": [
+        {
+          "id": "007-013",
+          "file": "cookbook-writing-portfolio",
+          "alt": "Berry Vibes Studio final project writing portfolio page with project summary and a cute milk-carton illustration.",
+          "caption": "Final project writing portfolio"
+        },
+        {
+          "id": "007-014",
+          "file": "cookbook-recipe-sketches",
+          "alt": "Page titled ‘From placeholders to original recipe sketches’ showing four illustrated dishes: pancakes, cookies, a strawberry drink, and a grilled sandwich.",
+          "caption": "From placeholders to original recipe sketches"
+        }
+      ],
+      "related": [
+        "recipe-builder",
+        "web-lab",
+        "enchanted-brew"
+      ]
+    },
+    {
+      "slug": "recipe-builder",
+      "title": "Berry Vibes Recipe Builder + Battle UI",
+      "kind": "project",
+      "categories": [
+        "ux-ui",
+        "web-design",
+        "interaction"
+      ],
+      "disciplines": "Web • UX/UI • Interface studies",
+      "summary": "Personalization, guided choices, comparison mechanics, and early interface planning.",
+      "body": [
+        "Personalized recipe-building experience organized around flavor, texture, ingredient swaps, saved recipes, and cozy challenge mechanics.",
+        "The interface studies move from grayscale low-fidelity wireframes to Berry Vibes–branded screens, including the CCD Battle Arena comparison concept."
+      ],
+      "source": "Master Portfolio pp. 6, 8; Creative Resume",
+      "images": [
+        {
+          "id": "006-012",
+          "file": "ccd-battle-arena",
+          "alt": "Berry Vibes ‘CCD Battle Arena’ interface comparing a CCD donut with a fast food donut, with calorie counts, a battle selector, and pattern scores.",
+          "caption": "CCD Battle Arena interface"
+        },
+        {
+          "id": "008-016",
+          "file": "recipe-builder-lowfi",
+          "alt": "Six grayscale low-fidelity recipe builder wireframes starting from a login screen.",
+          "caption": "Low-fidelity wireframes"
+        },
+        {
+          "id": "008-015",
+          "file": "recipe-builder-hifi",
+          "alt": "Berry Vibes branded recipe builder screens with food imagery and a calendar view.",
+          "caption": "Branded interface iteration"
+        }
+      ],
+      "related": [
+        "berry-vibes-cookbook",
+        "web-lab",
+        "savesip"
+      ]
+    },
+    {
+      "slug": "web-lab",
+      "title": "Interactive Web Lab",
+      "kind": "weblab",
+      "categories": [
+        "digital-worlds",
+        "web-design",
+        "interaction"
+      ],
+      "featured": true,
+      "disciplines": "HTML • CSS • JavaScript • Creative code",
+      "summary": "Responsive coded experiences that move beyond static graphics into interaction, game logic, storytelling, and accessibility.",
+      "source": "Master Portfolio p. 11; Creative Resume (Internet Studio Web Projects)",
+      "entries": [
+        {
+          "id": "history-battle-academy",
+          "title": "History Battle Academy",
+          "tag": "HTML • CSS • JS",
+          "text": "Multiple-choice battles, region modes, final challenge, explanations, best-score saving.",
+          "categories": [
+            "digital-worlds",
+            "interaction"
+          ]
+        },
+        {
+          "id": "ccd-recipe-battle",
+          "title": "CCD Recipe Battle",
+          "tag": "Creative code",
+          "text": "Comparison puzzle with scoring, progress, drag-and-drop, and poem reveal.",
+          "categories": [
+            "digital-worlds",
+            "interaction"
+          ]
+        },
+        {
+          "id": "cozy-recipe-quilt",
+          "title": "Cozy Recipe Quilt",
+          "tag": "Interaction",
+          "text": "Twelve draggable recipe riddles with touch, click, and keyboard support.",
+          "categories": [
+            "digital-worlds",
+            "interaction"
+          ]
+        },
+        {
+          "id": "customizable-quilt",
+          "title": "Customizable Recipe Quilt",
+          "tag": "Dynamic state",
+          "text": "User-selected recipes determine puzzle pieces, clues, colors, and poem order.",
+          "categories": [
+            "digital-worlds",
+            "interaction"
+          ]
+        },
+        {
+          "id": "hypertext-narrative",
+          "title": "Hypertext Narrative",
+          "tag": "Web storytelling",
+          "text": "A nonlinear multi-page story about creative growth, doubts, audience, and future goals.",
+          "categories": [
+            "digital-worlds"
+          ]
+        },
+        {
+          "id": "a-web-that-opens",
+          "title": "Concrete Poem: A Web That Opens",
+          "tag": "Concrete poetry",
+          "text": "Typography and spatial layout turn the webpage into a visual doorway.",
+          "categories": [
+            "digital-worlds",
+            "web-design"
+          ]
+        },
+        {
+          "id": "new-york-texas",
+          "title": "Concrete Poem: New York → Texas",
+          "tag": "Concrete poetry",
+          "text": "A visual journey from quiet beginnings to greater confidence and visibility.",
+          "categories": [
+            "digital-worlds",
+            "web-design"
+          ]
+        },
+        {
+          "id": "html-css-resume",
+          "title": "HTML/CSS Resume",
+          "tag": "Semantic web",
+          "text": "Professional resume page using hierarchy, typography, and responsive styling.",
+          "categories": [
+            "web-design"
+          ]
+        }
+      ],
+      "note": "The source portfolio documents these coded projects in text only. Screenshots and live links can be added to data/projects.json when available.",
+      "images": [],
+      "related": [
+        "berry-vibes-cookbook",
+        "recipe-builder",
+        "crosswalks"
+      ]
+    },
+    {
+      "slug": "nyc-2028",
+      "title": "NYC 2028 — Liberty Lights the World",
+      "kind": "artwork",
+      "categories": [
+        "branding",
+        "visual-design"
+      ],
+      "featured": true,
+      "disciplines": "Identity concept • Symbol design • NYC visual storytelling",
+      "summary": "Olympic identity concept combining the Statue of Liberty, New York skyline, and a concise city-forward silhouette system.",
+      "source": "Master Portfolio pp. 1, 12; Creative Resume",
+      "images": [
+        {
+          "id": "012-021",
+          "file": "nyc-2028-primary",
+          "alt": "NYC 2028 logo: a green torch whose flame contains the New York skyline above the Olympic rings, with ‘New York 2028 — Liberty Lights the World’.",
+          "caption": "Primary mark"
+        },
+        {
+          "id": "012-022",
+          "file": "nyc-2028-liberty",
+          "alt": "Alternate mark: a green Statue of Liberty silhouette raising a torch above the Olympic rings, captioned ‘Liberty Lights the World’.",
+          "caption": "Liberty silhouette mark"
+        }
+      ],
+      "related": [
+        "enchanted-brew",
+        "letterforms",
+        "selena-gomez"
+      ]
+    },
+    {
+      "slug": "enchanted-brew",
+      "title": "Enchanted Brew",
+      "kind": "artwork",
+      "categories": [
+        "branding"
+      ],
+      "disciplines": "Brand direction • Logo exploration • Cozy visual identity",
+      "summary": "Identity explorations ranging from cozy café marks to monograms and modular letterform systems.",
+      "source": "Master Portfolio pp. 13, 14, 22; Creative Resume",
+      "images": [
+        {
+          "id": "013-023",
+          "file": "enchanted-brew-script",
+          "alt": "Enchanted Brew script logo in teal with a pouring teapot, on a warm beige background.",
+          "caption": "Enchanted Brew"
+        },
+        {
+          "id": "013-024",
+          "file": "enchanted-brew-alt",
+          "alt": "Alternate Enchanted Brew mark: a steaming cup outline forming the E of ‘Enchanted’, with ‘Brew’ below.",
+          "caption": "Enchanted Brew alt"
+        },
+        {
+          "id": "014-032",
+          "file": "enchanted-brew-moodboard",
+          "alt": "Vertical moodboard of coffee shop imagery: latte art, pastries, wood textures, and an Enchanted Brew mood board title card.",
+          "caption": "Moodboard / content system"
+        }
+      ],
+      "related": [
+        "brew-at-home",
+        "nf-coffee",
+        "cupsi-identity"
+      ]
+    },
+    {
+      "slug": "brew-at-home",
+      "title": "Brew at Home",
+      "kind": "artwork",
+      "categories": [
+        "branding"
+      ],
+      "disciplines": "Logo • Brand system",
+      "summary": "Identity explorations ranging from cozy café marks to monograms and modular letterform systems.",
+      "source": "Master Portfolio p. 13",
+      "images": [
+        {
+          "id": "013-026",
+          "file": "brew-at-home",
+          "alt": "Brew at Home logo on black: a cat holding a coffee cup beside pink lettering and the line ‘Save money, one cup at a time’.",
+          "caption": "Brew at Home"
+        }
+      ],
+      "related": [
+        "enchanted-brew",
+        "savesip",
+        "nf-coffee"
+      ]
+    },
+    {
+      "slug": "cupsi-identity",
+      "title": "Cup$i Identity",
+      "kind": "artwork",
+      "categories": [
+        "branding"
+      ],
+      "disciplines": "Logo system",
+      "summary": "The original Cup$i logo system, later evolved into SaveSip.",
+      "source": "Master Portfolio pp. 4, 13",
+      "images": [
+        {
+          "id": "013-025",
+          "file": "cupsi-logo",
+          "alt": "Cup$i logo: a green drink cup with a dollar sign beside the Cup$i wordmark.",
+          "caption": "Cup$i"
+        }
+      ],
+      "related": [
+        "savesip",
+        "brew-at-home",
+        "enchanted-brew"
+      ]
+    },
+    {
+      "slug": "nf-coffee",
+      "title": "NF Coffee",
+      "kind": "artwork",
+      "categories": [
+        "branding"
+      ],
+      "disciplines": "Logo • Lettering",
+      "summary": "Identity explorations ranging from cozy café marks to monograms and modular letterform systems.",
+      "source": "Master Portfolio p. 13",
+      "images": [
+        {
+          "id": "013-029",
+          "file": "nf-coffee",
+          "alt": "Brown swashed ‘Coffee’ lettering logo with a coffee pot pouring into the letterforms.",
+          "caption": "NF Coffee"
+        }
+      ],
+      "related": [
+        "enchanted-brew",
+        "brew-at-home",
+        "letterforms"
+      ]
+    },
+    {
+      "slug": "js-monogram",
+      "title": "JS Monogram",
+      "kind": "artwork",
+      "categories": [
+        "branding"
+      ],
+      "disciplines": "Monogram",
+      "summary": "Identity explorations ranging from cozy café marks to monograms and modular letterform systems.",
+      "source": "Master Portfolio p. 13",
+      "images": [
+        {
+          "id": "013-027",
+          "file": "js-monogram",
+          "alt": "Black JS monogram with interlocking J and S above the name ‘Juliana Silva’.",
+          "caption": "JS monogram"
+        }
+      ],
+      "related": [
+        "letterforms",
+        "nf-coffee",
+        "nyc-2028"
+      ]
+    },
+    {
+      "slug": "letterforms",
+      "title": "Letterform Exploration",
+      "kind": "artwork",
+      "categories": [
+        "branding",
+        "visual-design"
+      ],
+      "disciplines": "Modular letterform system",
+      "summary": "Identity explorations ranging from cozy café marks to monograms and modular letterform systems.",
+      "source": "Master Portfolio p. 13",
+      "images": [
+        {
+          "id": "013-028",
+          "file": "letterforms",
+          "alt": "Grid of twenty colourful tiles each showing a variation of the letter B or b.",
+          "caption": "Letterforms"
+        }
+      ],
+      "related": [
+        "js-monogram",
+        "design-is-the-key",
+        "fein"
+      ]
+    },
+    {
+      "slug": "bakery-website",
+      "title": "Bakery Website",
+      "kind": "artwork",
+      "categories": [
+        "web-design"
+      ],
+      "disciplines": "Web design study",
+      "summary": "Web design studies, responsive interface concepts, and visual storytelling across desktop and mobile.",
+      "source": "Master Portfolio p. 14",
+      "images": [
+        {
+          "id": "014-030",
+          "file": "bakery-website",
+          "alt": "Dark bakery website hero titled ‘Cookies’ with a jar of cookies and a navigation bar.",
+          "caption": "Bakery website"
+        }
+      ],
+      "related": [
+        "berry-vibes-cookbook",
+        "billboard-mockup",
+        "recipe-builder"
+      ]
+    },
+    {
+      "slug": "billboard-mockup",
+      "title": "Billboard Mockup",
+      "kind": "artwork",
+      "categories": [
+        "advertising",
+        "web-design"
+      ],
+      "disciplines": "Mockup • Campaign placement",
+      "summary": "Web design studies, responsive interface concepts, and visual storytelling across desktop and mobile.",
+      "source": "Master Portfolio pp. 14, 22",
+      "images": [
+        {
+          "id": "014-033",
+          "file": "billboard-mockup",
+          "alt": "Green Big Brothers Big Sisters billboard mocked up above a graffiti-covered wall on a city street.",
+          "caption": "Billboard mockup"
+        }
+      ],
+      "related": [
+        "bakery-website",
+        "just-buy-it",
+        "iguard"
+      ]
+    },
+    {
+      "slug": "just-buy-it",
+      "title": "Just Buy It",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "featured": true,
+      "disciplines": "Culture jamming • Campaign satire",
+      "summary": "Familiar brand language, flipped. Campaign-style visual satire exploring consumer pressure, status, cravings, convenience, and persuasive advertising.",
+      "source": "Master Portfolio p. 15",
+      "images": [
+        {
+          "id": "015-034",
+          "file": "just-buy-it-runner",
+          "alt": "Culture-jamming ad: a runner carrying shopping boxes beside the headline ‘Just Buy It.’",
+          "caption": "Just Buy It — Runner"
+        },
+        {
+          "id": "015-035",
+          "file": "just-buy-it-shopper",
+          "alt": "Culture-jamming ad: a woman sitting among shopping bags beside the headline ‘Just Buy It.’",
+          "caption": "Just Buy It — Shopper"
+        }
+      ],
+      "related": [
+        "im-buyin-it",
+        "mchappiness",
+        "iguard"
+      ]
+    },
+    {
+      "slug": "im-buyin-it",
+      "title": "I'm Buyin' It",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "disciplines": "Culture jamming",
+      "summary": "Campaign-style visual satire exploring consumer pressure, status, cravings, convenience, and persuasive advertising.",
+      "source": "Master Portfolio p. 15",
+      "images": [
+        {
+          "id": "015-036",
+          "file": "im-buyin-it",
+          "alt": "A giant burger glowing over a red city skyline with the line ‘i'm BUYIN' it’.",
+          "caption": "I'm Buyin' It"
+        }
+      ],
+      "related": [
+        "just-buy-it",
+        "mchappiness",
+        "burger-poster"
+      ]
+    },
+    {
+      "slug": "mchappiness",
+      "title": "McHappiness+",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "disciplines": "Culture jamming",
+      "summary": "Campaign-style visual satire exploring consumer pressure, status, cravings, convenience, and persuasive advertising.",
+      "source": "Master Portfolio p. 15",
+      "images": [
+        {
+          "id": "015-037",
+          "file": "mchappiness",
+          "alt": "Red poster ‘Subscribe to Happiness’ for McHappiness+ with burger, fries, and a drink, priced from $9.99.",
+          "caption": "McHappiness+"
+        }
+      ],
+      "related": [
+        "just-buy-it",
+        "im-buyin-it",
+        "mcdonalds-ad"
+      ]
+    },
+    {
+      "slug": "iguard",
+      "title": "iGuard",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "disciplines": "Product advertising",
+      "summary": "Product + food advertising: bold appetite appeal, product focus, and campaign-style hierarchy.",
+      "source": "Master Portfolio p. 16",
+      "images": [
+        {
+          "id": "016-038",
+          "file": "iguard",
+          "alt": "Blue product ad for iGuard spray with mist, lemon slices, and feature icons.",
+          "caption": "iGuard"
+        }
+      ],
+      "related": [
+        "degree-cool-rush",
+        "apple-juice-ad",
+        "snickers-orbit"
+      ]
+    },
+    {
+      "slug": "degree-cool-rush",
+      "title": "Degree Cool Rush",
+      "kind": "artwork",
+      "categories": [
+        "advertising",
+        "visual-design"
+      ],
+      "disciplines": "Product compositing",
+      "summary": "Product + food advertising: bold appetite appeal, product focus, and campaign-style hierarchy.",
+      "source": "Master Portfolio p. 16",
+      "images": [
+        {
+          "id": "016-039",
+          "file": "degree-cool-rush",
+          "alt": "A Degree deodorant stick standing in dense green jungle foliage.",
+          "caption": "Degree Cool Rush"
+        }
+      ],
+      "related": [
+        "iguard",
+        "apple-juice-ad",
+        "snickers-orbit"
+      ]
+    },
+    {
+      "slug": "mcdonalds-ad",
+      "title": "McDonald's Food Ad",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "disciplines": "Food advertising",
+      "summary": "Product + food advertising: bold appetite appeal, product focus, and campaign-style hierarchy.",
+      "source": "Master Portfolio p. 16",
+      "images": [
+        {
+          "id": "016-040",
+          "file": "mcdonalds-ad",
+          "alt": "Red McDonald's poster with a burger, the golden arches, and ‘Tasty. Flavorful. Treat’.",
+          "caption": "McDonald's"
+        }
+      ],
+      "related": [
+        "burger-poster",
+        "mchappiness",
+        "ribs-poster"
+      ]
+    },
+    {
+      "slug": "burger-poster",
+      "title": "Burger Poster",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "disciplines": "Food advertising",
+      "summary": "Product + food advertising: bold appetite appeal, product focus, and campaign-style hierarchy.",
+      "source": "Master Portfolio p. 16",
+      "images": [
+        {
+          "id": "016-041",
+          "file": "burger-poster",
+          "alt": "Dark warm poster with a stacked burger under the headline ‘King of the Burger’.",
+          "caption": "Burger poster"
+        }
+      ],
+      "related": [
+        "mcdonalds-ad",
+        "ribs-poster",
+        "im-buyin-it"
+      ]
+    },
+    {
+      "slug": "airbnb-escape",
+      "title": "Airbnb Escape",
+      "kind": "artwork",
+      "categories": [
+        "advertising",
+        "visual-design"
+      ],
+      "featured": true,
+      "disciplines": "Photo manipulation • Advertising concept • Visual metaphor",
+      "summary": "Composites that sell the idea: campaign and product studies built through compositing, scale, atmosphere, and visual metaphor.",
+      "source": "Master Portfolio pp. 1, 17",
+      "images": [
+        {
+          "id": "017-042",
+          "file": "airbnb-escape",
+          "alt": "A hand peels back a white wall to reveal a tropical resort terrace and sea view, with the Airbnb logo.",
+          "caption": "Airbnb Escape"
+        }
+      ],
+      "related": [
+        "snickers-orbit",
+        "apple-juice-ad",
+        "blue-moon"
+      ]
+    },
+    {
+      "slug": "snickers-orbit",
+      "title": "Snickers Orbit",
+      "kind": "artwork",
+      "categories": [
+        "advertising",
+        "visual-design"
+      ],
+      "disciplines": "Product compositing",
+      "summary": "Campaign and product studies built through compositing, scale, atmosphere, and visual metaphor.",
+      "source": "Master Portfolio p. 17",
+      "images": [
+        {
+          "id": "017-043",
+          "file": "snickers-orbit",
+          "alt": "A chocolate bar wrapped in ribbons of chocolate with floating peanuts orbiting it.",
+          "caption": "Snickers Orbit"
+        }
+      ],
+      "related": [
+        "airbnb-escape",
+        "apple-juice-ad",
+        "iguard"
+      ]
+    },
+    {
+      "slug": "apple-juice-ad",
+      "title": "Apple Juice Ad",
+      "kind": "artwork",
+      "categories": [
+        "advertising",
+        "visual-design"
+      ],
+      "disciplines": "Product compositing • Scale",
+      "summary": "Campaign and product studies built through compositing, scale, atmosphere, and visual metaphor.",
+      "source": "Master Portfolio p. 17",
+      "images": [
+        {
+          "id": "017-044",
+          "file": "apple-juice-ad",
+          "alt": "A giant Martinelli's apple juice bottle and apples standing in a misty green valley with a tiny figure in front.",
+          "caption": "Apple Juice ad"
+        }
+      ],
+      "related": [
+        "snickers-orbit",
+        "airbnb-escape",
+        "degree-cool-rush"
+      ]
+    },
+    {
+      "slug": "ribs-poster",
+      "title": "Ribs Poster",
+      "kind": "artwork",
+      "categories": [
+        "advertising"
+      ],
+      "disciplines": "Food poster • Typography",
+      "summary": "Campaign and product studies built through compositing, scale, atmosphere, and visual metaphor.",
+      "source": "Master Portfolio p. 17",
+      "images": [
+        {
+          "id": "017-045",
+          "file": "ribs-poster",
+          "alt": "Black poster repeating the word ‘RIBS’ in heavy distressed type around a grilled rack of ribs over flames.",
+          "caption": "Ribs poster"
+        }
+      ],
+      "related": [
+        "burger-poster",
+        "mcdonalds-ad",
+        "march-madness"
+      ]
+    },
+    {
+      "slug": "fein",
+      "title": "FE!N",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "featured": true,
+      "disciplines": "Music poster • Type",
+      "summary": "Type with big visual energy: music, celebrity, sports, and experimental poster studies.",
+      "source": "Master Portfolio pp. 1, 18",
+      "images": [
+        {
+          "id": "018-046",
+          "file": "fein",
+          "alt": "Dark poster with blackletter-inspired FE!N letters in outline and magenta around a pink-tinted figure.",
+          "caption": "FE!N"
+        }
+      ],
+      "related": [
+        "selena-gomez",
+        "march-madness",
+        "summer-alt-sounds"
+      ]
+    },
+    {
+      "slug": "selena-gomez",
+      "title": "Selena Gomez Typography",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "featured": true,
+      "disciplines": "Editorial composition • Type experimentation • Portrait integration",
+      "summary": "Type with big visual energy: music, celebrity, sports, and experimental poster studies.",
+      "source": "Master Portfolio p. 18; Creative Resume",
+      "images": [
+        {
+          "id": "018-047",
+          "file": "selena-gomez",
+          "alt": "Grayscale portrait in profile with the name GOMEZ set vertically in large blue letters overlapping the face.",
+          "caption": "Selena Gomez"
+        }
+      ],
+      "related": [
+        "fein",
+        "kanye-west",
+        "march-madness"
+      ]
+    },
+    {
+      "slug": "march-madness",
+      "title": "March Madness",
+      "kind": "artwork",
+      "categories": [
+        "visual-design",
+        "advertising"
+      ],
+      "disciplines": "Sports poster",
+      "summary": "Type with big visual energy: music, celebrity, sports, and experimental poster studies.",
+      "source": "Master Portfolio p. 18",
+      "images": [
+        {
+          "id": "018-048",
+          "file": "march-madness",
+          "alt": "Black poster with a basketball in fiery light under the title ‘March Madness — Team A vs Team B’.",
+          "caption": "March Madness"
+        }
+      ],
+      "related": [
+        "fein",
+        "selena-gomez",
+        "ribs-poster"
+      ]
+    },
+    {
+      "slug": "summer-alt-sounds",
+      "title": "Summer Alt Sounds",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Music poster • Type",
+      "summary": "Type with big visual energy: music, celebrity, sports, and experimental poster studies.",
+      "source": "Master Portfolio p. 18",
+      "images": [
+        {
+          "id": "018-049",
+          "file": "summer-alt-sounds",
+          "alt": "Brown textured poster with a cream line-art flower and decorative lettering ‘Summer Alternative Sounds’.",
+          "caption": "Summer Alt Sounds"
+        }
+      ],
+      "related": [
+        "fein",
+        "escape",
+        "expresso"
+      ]
+    },
+    {
+      "slug": "design-is-the-key",
+      "title": "Design Is the Key",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Experimental composition • Letterforms",
+      "summary": "Experimental composition: letterforms, collage, editorial texture, and mood-driven poster systems.",
+      "source": "Master Portfolio p. 19",
+      "images": [
+        {
+          "id": "019-050",
+          "file": "design-is-the-key",
+          "alt": "Cream poster ‘Design is the Key’ with a golden key forming the I, black cats, and colourful organic shapes.",
+          "caption": "Design Is the Key"
+        }
+      ],
+      "related": [
+        "letterforms",
+        "escape",
+        "expresso"
+      ]
+    },
+    {
+      "slug": "escape",
+      "title": "Escape",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Poster • Mood",
+      "summary": "Experimental composition: letterforms, collage, editorial texture, and mood-driven poster systems.",
+      "source": "Master Portfolio p. 19",
+      "images": [
+        {
+          "id": "019-051",
+          "file": "escape",
+          "alt": "Dark film-style poster with a halftone face looking upward and the title ‘Escape — Trust No One’.",
+          "caption": "Escape"
+        }
+      ],
+      "related": [
+        "kanye-west",
+        "design-is-the-key",
+        "blue-moon"
+      ]
+    },
+    {
+      "slug": "kanye-west",
+      "title": "Kanye West — Carnival",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Music poster • Lettering",
+      "summary": "Experimental composition: letterforms, collage, editorial texture, and mood-driven poster systems.",
+      "source": "Master Portfolio p. 19",
+      "images": [
+        {
+          "id": "019-052",
+          "file": "kanye-west",
+          "alt": "Deep blue poster with arched outlined ‘Carnival’ lettering, X-eyed face marks, and ‘Kanye West’ at the bottom.",
+          "caption": "Kanye West"
+        }
+      ],
+      "related": [
+        "fein",
+        "escape",
+        "selena-gomez"
+      ]
+    },
+    {
+      "slug": "expresso",
+      "title": "Expresso",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Collage • Editorial texture",
+      "summary": "Experimental composition: letterforms, collage, editorial texture, and mood-driven poster systems.",
+      "source": "Master Portfolio p. 19",
+      "images": [
+        {
+          "id": "019-053",
+          "file": "expresso",
+          "alt": "Black-and-white collage poster of a singer in various poses above a red ‘Expresso’ script logo.",
+          "caption": "Expresso"
+        }
+      ],
+      "related": [
+        "editorial-collage",
+        "design-is-the-key",
+        "summer-alt-sounds"
+      ]
+    },
+    {
+      "slug": "blue-moon",
+      "title": "Blue Moon",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "featured": true,
+      "disciplines": "Surreal compositing • Atmosphere • Lighting and mood",
+      "summary": "Mood, emotion + surreal narrative: photo manipulation and digital art using scale, atmosphere, double exposure, and surreal visual storytelling.",
+      "source": "Master Portfolio p. 20; Creative Resume",
+      "images": [
+        {
+          "id": "020-054",
+          "file": "blue-moon",
+          "alt": "A glowing blue tree growing from the curved surface of a dark planet, with a crack of light running across it.",
+          "caption": "Blue Moon"
+        }
+      ],
+      "related": [
+        "underwater",
+        "double-exposure",
+        "resilience"
+      ]
+    },
+    {
+      "slug": "underwater",
+      "title": "Underwater",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Photo composite",
+      "summary": "Photo manipulation and digital art using scale, atmosphere, double exposure, and surreal visual storytelling.",
+      "source": "Master Portfolio p. 20",
+      "images": [
+        {
+          "id": "020-055",
+          "file": "underwater",
+          "alt": "A person curled up on a couch in a dim blue room filled with water, with goldfish swimming around them.",
+          "caption": "Underwater"
+        }
+      ],
+      "related": [
+        "blue-moon",
+        "double-exposure",
+        "resilience"
+      ]
+    },
+    {
+      "slug": "double-exposure",
+      "title": "Double Exposure",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Double exposure",
+      "summary": "Photo manipulation and digital art using scale, atmosphere, double exposure, and surreal visual storytelling.",
+      "source": "Master Portfolio p. 20",
+      "images": [
+        {
+          "id": "020-056",
+          "file": "double-exposure",
+          "alt": "Black profile silhouette of a woman filled with a city skyline and a figure standing in bright light.",
+          "caption": "Double Exposure"
+        }
+      ],
+      "related": [
+        "blue-moon",
+        "journey",
+        "underwater"
+      ]
+    },
+    {
+      "slug": "resilience",
+      "title": "Resilience",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Photo composite • Social narrative",
+      "summary": "Photo manipulation and digital art using scale, atmosphere, double exposure, and surreal visual storytelling.",
+      "source": "Master Portfolio p. 20",
+      "images": [
+        {
+          "id": "020-057",
+          "file": "resilience",
+          "alt": "A person in a white protective suit sitting on a curb, with text about navigating the job market after the pandemic and the word ‘Resilience’.",
+          "caption": "Resilience"
+        }
+      ],
+      "related": [
+        "journey",
+        "double-exposure",
+        "underwater"
+      ]
+    },
+    {
+      "slug": "journey",
+      "title": "Journey",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "featured": true,
+      "disciplines": "Narrative illustration",
+      "summary": "Narrative images + illustration studies: work that leans into metaphor, personal transition, and image-led storytelling.",
+      "source": "Master Portfolio p. 21",
+      "images": [
+        {
+          "id": "021-058",
+          "file": "journey",
+          "alt": "Illustration of a small figure walking a glowing winding path toward a pastel city, while a younger figure stands at the bottom.",
+          "caption": "Journey"
+        }
+      ],
+      "related": [
+        "split-city",
+        "illustration-studies",
+        "double-exposure"
+      ]
+    },
+    {
+      "slug": "split-city",
+      "title": "Conversation / Split-City Study",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Illustration",
+      "summary": "Work that leans into metaphor, personal transition, and image-led storytelling.",
+      "source": "Master Portfolio p. 21",
+      "images": [
+        {
+          "id": "021-059",
+          "file": "split-city",
+          "alt": "Colourful illustration of two women facing each other in front of two city skylines, with a broken heart between them.",
+          "caption": "Conversation / Split-City Study"
+        }
+      ],
+      "related": [
+        "journey",
+        "illustration-studies",
+        "editorial-collage"
+      ]
+    },
+    {
+      "slug": "illustration-studies",
+      "title": "Illustration Studies A + B",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Illustration • Colour study",
+      "summary": "Work that leans into metaphor, personal transition, and image-led storytelling.",
+      "source": "Master Portfolio p. 21",
+      "images": [
+        {
+          "id": "021-060",
+          "file": "illustration-study-a",
+          "alt": "Gray scene where a child paints a large melting blue letterform shape on a wall.",
+          "caption": "Illustration study A"
+        },
+        {
+          "id": "021-061",
+          "file": "illustration-study-b",
+          "alt": "The same scene in pink: a child painting a large melting letterform shape.",
+          "caption": "Illustration study B"
+        }
+      ],
+      "related": [
+        "journey",
+        "split-city",
+        "cookie-illustration"
+      ]
+    },
+    {
+      "slug": "water-graphic",
+      "title": "Water Graphic",
+      "kind": "artwork",
+      "categories": [
+        "visual-design",
+        "advertising"
+      ],
+      "disciplines": "Information graphic",
+      "summary": "Smaller studies, mockups + experiments: illustration, information graphics, moodboards, logos, and visual tests.",
+      "source": "Master Portfolio p. 22",
+      "images": [
+        {
+          "id": "022-062",
+          "file": "water-graphic",
+          "alt": "A woman drinking from a bottle as water splashes into an arm shape, with the line ‘60% of your body is water’.",
+          "caption": "Water graphic"
+        }
+      ],
+      "related": [
+        "coffee-pop-out",
+        "iguard",
+        "cookie-illustration"
+      ]
+    },
+    {
+      "slug": "cookie-illustration",
+      "title": "Cookie Illustration",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Illustration",
+      "summary": "Smaller studies, mockups + experiments: illustration, information graphics, moodboards, logos, and visual tests.",
+      "source": "Master Portfolio p. 22",
+      "images": [
+        {
+          "id": "022-063",
+          "file": "cookie-illustration",
+          "alt": "Flat illustration of a stack of chocolate chip cookies on a cream background.",
+          "caption": "Cookie illustration"
+        }
+      ],
+      "related": [
+        "water-graphic",
+        "berry-vibes-cookbook",
+        "bakery-website"
+      ]
+    },
+    {
+      "slug": "coffee-pop-out",
+      "title": "Coffee Pop-Out",
+      "kind": "artwork",
+      "categories": [
+        "visual-design",
+        "advertising"
+      ],
+      "disciplines": "Social media visual",
+      "summary": "Smaller studies, mockups + experiments: illustration, information graphics, moodboards, logos, and visual tests.",
+      "source": "Master Portfolio p. 22",
+      "images": [
+        {
+          "id": "022-064",
+          "file": "coffee-pop-out",
+          "alt": "Coffee being poured from a carafe so it appears to spill out of a social media post into a cup below.",
+          "caption": "Coffee pop-out"
+        }
+      ],
+      "related": [
+        "water-graphic",
+        "enchanted-brew",
+        "nf-coffee"
+      ]
+    },
+    {
+      "slug": "editorial-collage",
+      "title": "Editorial / Music Collage",
+      "kind": "artwork",
+      "categories": [
+        "visual-design"
+      ],
+      "disciplines": "Collage",
+      "summary": "Smaller studies, mockups + experiments: illustration, information graphics, moodboards, logos, and visual tests.",
+      "source": "Master Portfolio p. 22",
+      "images": [
+        {
+          "id": "022-066",
+          "file": "editorial-collage",
+          "alt": "Dense collage of vintage photographs of a performer in dance poses with album-style text.",
+          "caption": "Editorial / music collage"
+        }
+      ],
+      "related": [
+        "expresso",
+        "kanye-west",
+        "split-city"
+      ]
+    }
+  ]
+}

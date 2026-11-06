@@ -1,0 +1,153 @@
+<!-- 3D stage: WebGL canvas, or a designed vector scene when WebGL is unavailable -->
+<div class="stage" aria-hidden="true">
+  <canvas class="stage__canvas"></canvas>
+  <div class="fallback-scene">
+    <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="fb-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#12081b"/><stop offset=".45" stop-color="#3a1648"/><stop offset=".72" stop-color="#8a3577"/><stop offset="1" stop-color="#2a1236"/>
+        </linearGradient>
+        <radialGradient id="fb-glow" cx=".3" cy=".55" r=".45"><stop offset="0" stop-color="#ff9fd0" stop-opacity=".75"/><stop offset="1" stop-color="#ff9fd0" stop-opacity="0"/></radialGradient>
+        <linearGradient id="fb-metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d2bf"/><stop offset=".4" stop-color="#e6a98d"/><stop offset=".7" stop-color="#9c6450"/><stop offset="1" stop-color="#e9b8a0"/></linearGradient>
+        <linearGradient id="fb-portal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb3d8"/><stop offset=".45" stop-color="#b8487f"/><stop offset="1" stop-color="#3a1648"/></linearGradient>
+        <linearGradient id="fb-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b103a"/><stop offset="1" stop-color="#12081b"/></linearGradient>
+        <radialGradient id="fb-blossom" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd6ea"/><stop offset=".55" stop-color="#ee6fa8"/><stop offset="1" stop-color="#9e2a64" stop-opacity="0"/></radialGradient>
+        <radialGradient id="fb-lantern" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd2a1"/><stop offset="1" stop-color="#ffb27a" stop-opacity="0"/></radialGradient>
+        <filter id="fb-blur"><feGaussianBlur stdDeviation="6"/></filter>
+      </defs>
+      <rect width="1600" height="900" fill="url(#fb-sky)"/>
+      <g fill="#fff" class="shimmer"><circle cx="210" cy="90" r="1.4"/><circle cx="420" cy="160" r="1"/><circle cx="760" cy="70" r="1.6"/><circle cx="1010" cy="130" r="1.1"/><circle cx="1290" cy="60" r="1.5"/><circle cx="1480" cy="180" r="1"/><circle cx="600" cy="220" r="1"/><circle cx="1180" cy="230" r="1.2"/></g>
+      <rect width="1600" height="900" fill="url(#fb-glow)"/>
+      <path d="M0 560 C 160 470 260 520 380 470 S 620 430 760 500 S 1060 420 1220 480 S 1480 440 1600 470 V900 H0z" fill="#5a2a66" opacity=".7"/>
+      <path d="M0 610 C 200 540 330 580 500 540 S 820 560 1000 530 S 1360 560 1600 520 V900 H0z" fill="#3e1a4c" opacity=".9"/>
+      <!-- floating island seen through the moon gate -->
+      <g transform="translate(470 330)" fill="#3b2147"><path d="M-90 0 L90 0 L30 90 L-10 140 L-40 80z"/><rect x="-20" y="-60" width="22" height="60"/><path d="M-24 -60 L-9 -95 L6 -60z"/><rect x="18" y="-38" width="16" height="38"/><path d="M15 -38 L26 -62 L37 -38z"/><circle cx="-9" cy="-30" r="3" fill="#ffc590"/></g>
+      <!-- moon gate -->
+      <g transform="translate(470 470)"><circle r="300" fill="none" stroke="#5b3a5e" stroke-width="54"/><circle r="300" fill="none" stroke="url(#fb-metal)" stroke-width="6" transform="scale(1.1)"/><circle r="268" fill="none" stroke="url(#fb-metal)" stroke-width="5"/><circle r="262" fill="none" stroke="#ff7fbf" stroke-width="2" class="shimmer"/></g>
+      <!-- colonnade -->
+      <g fill="#4a2f52" opacity=".85"><rect x="820" y="250" width="34" height="420"/><rect x="1040" y="230" width="34" height="440"/><rect x="1260" y="230" width="34" height="440"/><rect x="1480" y="250" width="34" height="420"/><path d="M780 250 Q 1170 160 1560 250 L1560 270 Q1170 180 780 270z"/></g>
+      <!-- three portals -->
+      <g transform="translate(950 330)"><path d="M0 330 V100 A100 100 0 0 1 200 100 V330z" fill="url(#fb-portal)" opacity=".9"/><path d="M-14 336 V100 A114 114 0 0 1 214 100 V336" fill="none" stroke="url(#fb-metal)" stroke-width="14"/></g>
+      <g transform="translate(1180 310)"><path d="M0 350 V100 A100 100 0 0 1 200 100 V350z" fill="url(#fb-portal)" opacity=".9"/><path d="M-14 356 V100 A114 114 0 0 1 214 100 V356" fill="none" stroke="url(#fb-metal)" stroke-width="14"/></g>
+      <g transform="translate(1410 330)"><path d="M0 330 V100 A100 100 0 0 1 200 100 V330z" fill="url(#fb-portal)" opacity=".9"/><path d="M-14 336 V100 A114 114 0 0 1 214 100 V336" fill="none" stroke="url(#fb-metal)" stroke-width="14"/></g>
+      <!-- reflective floor -->
+      <rect y="666" width="1600" height="234" fill="url(#fb-floor)"/>
+      <g opacity=".22" transform="translate(0 1332) scale(1 -1)"><path d="M950 666 V430 A100 100 0 0 1 1150 430 V666z" fill="#ff9fd0"/><path d="M1180 666 V410 A100 100 0 0 1 1380 410 V666z" fill="#c7a6ff"/><path d="M1410 666 V430 A100 100 0 0 1 1610 430 V666z" fill="#ff9fd0"/></g>
+      <ellipse cx="1200" cy="760" rx="520" ry="70" fill="#7a3a86" opacity=".18" filter="url(#fb-blur)"/>
+      <!-- lanterns -->
+      <g fill="url(#fb-lantern)"><circle cx="940" cy="650" r="40"/><circle cx="1165" cy="650" r="40"/><circle cx="1395" cy="650" r="40"/><circle cx="260" cy="640" r="36"/></g>
+      <!-- blossoms -->
+      <g fill="url(#fb-blossom)">
+        <circle cx="120" cy="80" r="120"/><circle cx="280" cy="40" r="90"/><circle cx="60" cy="260" r="110"/><circle cx="330" cy="170" r="70"/><circle cx="200" cy="330" r="60"/>
+        <circle cx="1560" cy="140" r="120"/><circle cx="1420" cy="60" r="80"/><circle cx="1500" cy="320" r="70"/><circle cx="80" cy="760" r="90"/><circle cx="1540" cy="740" r="80"/>
+      </g>
+      <path d="M-10 900 C 40 700 60 520 160 300 S 240 120 330 60" stroke="#3a2030" stroke-width="22" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span class="fx-petal" style="left:12%;--d:15s"></span><span class="fx-petal" style="left:28%;--d:19s;--delay:-6s"></span><span class="fx-petal" style="left:46%;--d:17s;--delay:-3s"></span>
+    <span class="fx-petal" style="left:63%;--d:21s;--delay:-11s"></span><span class="fx-petal" style="left:78%;--d:16s;--delay:-8s"></span><span class="fx-petal" style="left:90%;--d:23s;--delay:-14s"></span>
+  </div>
+  <div class="stage__veil"></div>
+  <div class="stage__fade"></div>
+</div>
+
+<!-- Cinematic intro (plays once; skippable; reduced-motion aware) -->
+<div class="intro" data-intro-overlay role="dialog" aria-modal="true" aria-labelledby="intro-title">
+  <button class="btn btn--ghost btn--sm intro__skip" type="button" data-intro-skip>Skip intro</button>
+  <div class="intro__content">
+    <svg class="intro__mark" viewBox="0 0 64 64" aria-hidden="true" data-step style="--step:0"><use href="#logo"></use></svg>
+    <p class="intro__brand" data-step style="--step:1">BERRY VIBES</p>
+    <p class="intro__studio" data-step style="--step:2">Studio</p>
+    <p class="intro__title" id="intro-title" data-step style="--step:3">The Creative Dimension</p>
+    <p class="intro__by" data-step style="--step:4">A Portfolio by <em>Danielle Julian</em></p>
+    <div class="intro__loader" data-step style="--step:5">
+      <div class="progress" role="progressbar" aria-label="Loading the experience" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress__bar"></div></div>
+      <p class="intro__status" data-intro-status aria-live="polite">Loading experience… 0%</p>
+      <button class="btn btn--primary intro__enter" type="button" data-intro-enter hidden><svg aria-hidden="true"><use href="#i-play"></use></svg>Enter the Dimension</button>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="home-main" tabindex="-1">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__title-the">THE</span>
+          <span class="hero__title-main"><span>CREATIVE</span><span>DIMENSION</span></span>
+        </h1>
+        <p class="hero__by">A Portfolio by <em>Danielle Julian</em></p>
+        <div class="hero__rule" aria-hidden="true"></div>
+        <p class="hero__roles">Graphic Designer • UX/UI Designer • Visual Storyteller</p>
+        <p class="hero__tagline">Playful Systems. Purposeful Stories.<br>Nearly 4 years of hands-on practice.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#portals" data-enter-experience><svg aria-hidden="true"><use href="#i-play"></use></svg>Enter Experience</a>
+          <a class="btn btn--ghost" href="{{ROOT}}work.html"><svg aria-hidden="true"><use href="#i-grid"></use></svg>View Work</a>
+        </div>
+      </div>
+      <nav class="portals" id="portals" aria-label="Three creative portals">
+        <ul class="portals__list" role="list"><!--PORTALS--></ul>
+      </nav>
+    </div>
+  </section>
+  <ul class="control-hints" aria-label="3D controls">
+    <li><span class="wasd" aria-hidden="true"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span>Explore</li>
+    <li><svg aria-hidden="true"><use href="#i-mouse"></use></svg>Look around</li>
+    <li><svg aria-hidden="true"><use href="#i-hand"></use></svg>Click a portal</li>
+  </ul>
+
+  <div class="chapters">
+    <section class="section" aria-labelledby="featured-h">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Chapter I · Selected work</p>
+          <h2 class="section__title" id="featured-h">Work that <em>tells a story</em></h2>
+          <p class="lede">UX research, brand identity, culture-jamming campaigns and surreal composites — a cross-section of the archive.</p>
+        </div>
+        <ul class="featured-rail" role="list"><!--FEATURED--></ul>
+        <p style="margin-top:2.5rem"><a class="link-arrow" href="{{ROOT}}work.html">Explore the full gallery<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="philosophy-h">
+      <div class="container statement">
+        <div data-reveal>
+          <p class="eyebrow">Chapter II · Philosophy</p>
+          <h2 class="statement__quote" id="philosophy-h">Designing <em>playful systems</em> with purpose.</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>A multidisciplinary practice built through graphic design, UX/UI, branding, web, advertising, interaction, and visual storytelling.</p>
+          <p>Danielle discovered graphic design around 2021 and began practicing consistently in late 2022. Since then, the work has expanded from posters, ads, and photo manipulation into UX/UI, brand systems, responsive websites, front-end coding, interaction design, and research-driven product concepts.</p>
+          <p><a class="link-arrow" href="{{ROOT}}about.html">More about Danielle<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="process-h">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Chapter III · Process</p>
+          <h2 class="section__title" id="process-h">How I <em>build</em></h2>
+          <p class="lede">From research and concept to visual systems, interface decisions, code, and presentation.</p>
+        </div>
+        <ol class="process-steps" role="list">
+          <li data-reveal><b>Discover</b><span>Research • audience • context</span></li>
+          <li data-reveal><b>Define</b><span>Problem • goals • constraints</span></li>
+          <li data-reveal><b>Design</b><span>Brand • type • layout • UI</span></li>
+          <li data-reveal><b>Prototype</b><span>Wireframes • interaction • code</span></li>
+          <li data-reveal><b>Refine</b><span>Critique • iteration • polish</span></li>
+          <li data-reveal><b>Present</b><span>Case study • story • delivery</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section cta-portal" aria-labelledby="cta-h">
+      <p class="eyebrow">Final chapter</p>
+      <h2 class="section__title" id="cta-h">Let's make something <em>memorable.</em></h2>
+      <p class="lede">Available now — coursework complete, commencement December 2026.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn--primary" href="{{ROOT}}contact.html"><svg aria-hidden="true"><use href="#i-mail"></use></svg>Get in touch</a>
+        <a class="btn btn--ghost" href="{{ROOT}}resume.html"><svg aria-hidden="true"><use href="#i-eye"></use></svg>View résumé</a>
+      </div>
+    </section>
+  </div>
+</main>
