@@ -43,3 +43,13 @@ Maintenance notes:
 
 - Do not modify, delete, or overwrite existing portfolio pages, components, screenshots,
   assets, or project content unless the task explicitly asks for it.
+
+## Site architecture (Phase 1 — The Creative Dimension)
+
+- **Static, build-free site** for GitHub Pages: HTML + CSS + native ES modules. Do not add npm, a bundler, React/Vite or a backend.
+- **Content lives in `data/projects.json`; page bodies in `src/pages/`.** Never hand-edit the generated `*.html`. Regenerate with `python3 tools/build_site.py` (Python 3 standard library only) and commit the output.
+- **Artwork** comes only from Danielle's PDFs (`tools/extract_assets.py`). Never invent projects, metrics, clients, employers or tools. Tools are limited to the résumé list: Figma, Photoshop, Illustrator, Lightroom, Canva, HTML, CSS, JavaScript, GitHub, PowerPoint.
+- **Design system:** `design-system/the-creative-dimension/MASTER.md` (tokens in `assets/css/tokens.css`). Read it before UI work; Danielle's reference screenshots take priority over generic suggestions.
+- **3D:** Three.js r170 is vendored at `vendor/three-0.170.0/` and resolved through the import map in `index.html`. The scene modules are in `assets/js/scene/`. Quality profiles (`quality.js`) must keep changing real GPU work. The site must stay fully usable without WebGL or JavaScript.
+- **Licensing:** record every third-party asset in `ASSET_CREDITS.md`.
+- **QA:** headless Chromium renders WebGL via SwiftShader (very slow). Use small viewports for 3D screenshots, and never claim GPU performance from it.

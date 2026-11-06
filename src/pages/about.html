@@ -1,0 +1,153 @@
+<main id="main" class="page-main" tabindex="-1">
+  <section class="page-hero">
+    <div class="container about-hero">
+      <div>
+        <p class="eyebrow">The studio</p>
+        <h1 class="page-hero__title">About <em>Me</em></h1>
+        <p class="hero__roles" style="margin-top:1rem">Graphic Designer • UX/UI Designer • Visual Storyteller</p>
+        <div class="prose" style="margin-top:1.5rem">
+          <p class="lede">I'm <strong>Danielle Julian</strong>, a multidisciplinary designer working across graphic design, UX/UI, branding, advertising, web design, and interaction design.</p>
+          <p>I turn ideas into clear visual systems through research, wireframes, typography, brand identity, polished interfaces, and expressive storytelling. Berry Vibes Studio is the name I give that practice.</p>
+        </div>
+        <div class="btn-row" style="margin-top:2rem">
+          <a class="btn btn--primary" href="{{ROOT}}contact.html"><svg aria-hidden="true"><use href="#i-mail"></use></svg>Contact me</a>
+          <a class="btn btn--ghost" href="{{ROOT}}resume.html"><svg aria-hidden="true"><use href="#i-eye"></use></svg>View résumé</a>
+        </div>
+      </div>
+      <!-- Studio workspace: arched window onto blossoms, desk lamp, open laptop -->
+      <div class="studio-window" data-reveal aria-hidden="true">
+        <svg viewBox="0 0 480 600">
+          <defs>
+            <linearGradient id="sw-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1648"/><stop offset=".6" stop-color="#b14e8c"/><stop offset="1" stop-color="#f3a6c8"/></linearGradient>
+            <linearGradient id="sw-metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d2bf"/><stop offset=".45" stop-color="#e6a98d"/><stop offset=".75" stop-color="#9c6450"/><stop offset="1" stop-color="#e9b8a0"/></linearGradient>
+            <radialGradient id="sw-bl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd6ea"/><stop offset=".6" stop-color="#ea478b"/><stop offset="1" stop-color="#8e1f52" stop-opacity="0"/></radialGradient>
+            <radialGradient id="sw-lamp" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#ffd8a8" stop-opacity=".85"/><stop offset="1" stop-color="#ffb27a" stop-opacity="0"/></radialGradient>
+            <linearGradient id="sw-screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a2f6e"/><stop offset="1" stop-color="#ea478b"/></linearGradient>
+            <clipPath id="sw-clip"><path d="M70 470 V190 A170 170 0 0 1 410 190 V470z"/></clipPath>
+          </defs>
+          <path d="M70 470 V190 A170 170 0 0 1 410 190 V470z" fill="url(#sw-sky)"/>
+          <g clip-path="url(#sw-clip)">
+            <path d="M160 470 C170 380 210 330 260 260 S 330 180 360 120" stroke="#3a2030" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <path d="M250 280 C 210 240 180 200 150 180 M300 220 C 340 220 370 240 400 260" stroke="#3a2030" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <g fill="url(#sw-bl)"><circle cx="150" cy="170" r="60"/><circle cx="230" cy="120" r="70"/><circle cx="330" cy="110" r="72"/><circle cx="400" cy="250" r="60"/><circle cx="110" cy="290" r="50"/><circle cx="300" cy="200" r="50"/><circle cx="370" cy="40" r="60"/></g>
+          </g>
+          <!-- mullions -->
+          <g stroke="url(#sw-metal)" fill="none"><path d="M70 470 V190 A170 170 0 0 1 410 190 V470z" stroke-width="12"/><path d="M240 20 V470 M70 300 H410 M80 150 H400" stroke-width="5"/></g>
+          <!-- lamp glow + desk -->
+          <ellipse cx="150" cy="520" rx="170" ry="90" fill="url(#sw-lamp)"/>
+          <path d="M60 330 L120 300 L150 330" stroke="#e6a98d" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M100 300 l40 -20 l20 40 z" fill="#e6a98d"/>
+          <circle cx="150" cy="320" r="10" fill="#ffd8a8"/>
+          <rect x="20" y="520" width="440" height="22" rx="4" fill="#3b2230"/>
+          <rect x="30" y="542" width="18" height="58" fill="#2b1824"/><rect x="432" y="542" width="18" height="58" fill="#2b1824"/>
+          <!-- laptop -->
+          <path d="M210 440 L380 440 L392 512 L198 512z" fill="#2b103a" stroke="#e6a98d" stroke-width="3"/>
+          <path d="M218 448 L372 448 L382 504 L208 504z" fill="url(#sw-screen)"/>
+          <g fill="#ffd6ea" opacity=".9"><circle cx="295" cy="476" r="11"/><circle cx="278" cy="466" r="7"/><circle cx="314" cy="487" r="8"/></g>
+          <path d="M180 512 H410 L420 522 H170z" fill="#4a2a44"/>
+          <!-- plant -->
+          <rect x="400" y="485" width="34" height="35" rx="4" fill="#5a2d4a"/>
+          <path d="M417 485 C 405 460 395 450 388 440 M417 485 C 420 455 430 445 440 432 M417 485 C 418 462 414 450 412 438" stroke="#7aa07a" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="philo-h">
+    <div class="container statement">
+      <div data-reveal>
+        <p class="eyebrow">Design philosophy</p>
+        <h2 class="statement__quote" id="philo-h">Playful systems. <em>Purposeful stories.</em></h2>
+      </div>
+      <div class="prose" data-reveal>
+        <p>Designing playful systems with purpose means pairing warmth with logic — a cute app with serious product logic, and visual work with real narrative intent.</p>
+        <p>I start with research before polish — audience statements, notes, personas and low-fidelity flows — then move into visual systems, interface decisions, code and presentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="expertise-h">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Areas of expertise</p><h2 class="section__title" id="expertise-h">Core <em>strengths</em></h2></div>
+      <ul class="skills-cloud" role="list">
+        <li data-reveal>Graphic Design</li><li data-reveal>UX/UI</li><li data-reveal>Branding</li><li data-reveal>Visual Design</li>
+        <li data-reveal>Web Design</li><li data-reveal>Interaction Design</li><li data-reveal>Typography</li><li data-reveal>Advertising</li>
+        <li data-reveal>Photo Compositing</li><li data-reveal>UX Research</li><li data-reveal>Wireframing</li><li data-reveal>Visual Storytelling</li>
+        <li data-reveal>Creative Direction</li><li data-reveal>HTML/CSS/JS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="journey-h">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Creative journey</p><h2 class="section__title" id="journey-h">Nearly four years of <em>hands-on practice</em></h2></div>
+      <ol class="timeline" role="list">
+        <li data-reveal><time>2021</time><span>Discovered graphic design.</span></li>
+        <li data-reveal><time>Late 2022</time><span>Began practicing consistently — posters, ads and photo manipulation.</span></li>
+        <li data-reveal><time>2024–25</time><span>Brand systems, UX/UI and web design.</span></li>
+        <li data-reveal><time>2026</time><span>Coursework complete at UT Dallas; Google UX Design Certificate completed.</span></li>
+        <li data-reveal><time>Now</time><span>Available for design opportunities. Commencement December 2026.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="edu-h">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Education &amp; credentials</p><h2 class="section__title" id="edu-h">Where I <em>studied</em></h2></div>
+      <div class="two-col">
+        <article class="panel edu-card" data-reveal>
+          <h3>University of Texas at Dallas</h3>
+          <p>B.A., Arts, Technology, and Emerging Communication — Graphic Design concentration.</p>
+          <p>Degree requirements completed • Commencement December 2026.</p>
+        </article>
+        <article class="panel edu-card" data-reveal>
+          <h3>CUNY College of Staten Island</h3>
+          <p>A.A., Liberal Arts &amp; Sciences — Communication.</p>
+        </article>
+        <article class="panel edu-card" data-reveal>
+          <h3>Google UX Design Certificate</h3>
+          <p>Completed 2026.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="process-h">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Design process</p><h2 class="section__title" id="process-h">How I <em>build</em></h2></div>
+      <ol class="process-steps" role="list">
+        <li data-reveal><b>Discover</b><span>Research • audience • context</span></li>
+        <li data-reveal><b>Define</b><span>Problem • goals • constraints</span></li>
+        <li data-reveal><b>Design</b><span>Brand • type • layout • UI</span></li>
+        <li data-reveal><b>Prototype</b><span>Wireframes • interaction • code</span></li>
+        <li data-reveal><b>Refine</b><span>Critique • iteration • polish</span></li>
+        <li data-reveal><b>Present</b><span>Case study • story • delivery</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tools-h">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Tools &amp; skills</p><h2 class="section__title" id="tools-h">The <em>toolkit</em></h2>
+        <p class="lede">The tools listed on my résumé — nothing more.</p></div>
+      <ul class="tools-grid" role="list">
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:linear-gradient(135deg,#a259ff,#f24e1e)" aria-hidden="true">Fg</span>Figma</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#001e36;color:#31a8ff" aria-hidden="true">Ps</span>Photoshop</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#330000;color:#ff9a00" aria-hidden="true">Ai</span>Illustrator</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#001e36;color:#74b4ff" aria-hidden="true">Lr</span>Lightroom</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:linear-gradient(135deg,#00c4cc,#7d2ae8)" aria-hidden="true">Ca</span>Canva</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#24292f" aria-hidden="true">GH</span>GitHub</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#3a1a10;color:#ff8a4c" aria-hidden="true">&lt;/&gt;</span>HTML</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#14244a;color:#7fb2ff" aria-hidden="true">{ }</span>CSS</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#3d3500;color:#f7df1e" aria-hidden="true">JS</span>JavaScript</li>
+        <li class="tool" data-reveal><span class="tool__mono" style="--tile:#3a1408;color:#ff8f6b" aria-hidden="true">P</span>PowerPoint</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section cta-portal" aria-labelledby="cta-h" style="text-align:center;display:grid;justify-items:center;gap:1rem">
+    <p class="eyebrow">Next step</p>
+    <h2 class="section__title" id="cta-h">Let's make something <em>memorable.</em></h2>
+    <a class="btn btn--primary" href="{{ROOT}}contact.html"><svg aria-hidden="true"><use href="#i-mail"></use></svg>Contact Danielle</a>
+  </section>
+</main>

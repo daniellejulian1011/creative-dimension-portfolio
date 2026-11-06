@@ -1,0 +1,151 @@
+/* =========================================================================
+   Base: reset, typography, layout primitives, accessibility utilities
+   ========================================================================= */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root:not([data-motion="reduce"]) { scroll-behavior: smooth; }
+}
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--surface-base);
+  background-image: var(--grad-sky);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg, video, canvas { display: block; max-width: 100%; }
+img { height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
+:where(h1, h2, h3, h4) {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--lh-snug);
+  text-wrap: balance;
+  letter-spacing: 0.005em;
+}
+p, li { text-wrap: pretty; }
+strong { font-weight: 600; }
+
+/* ---- Focus: always visible, never obscured ------------------------------ */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+/* ---- Utilities ------------------------------------------------------------ */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: fixed;
+  left: var(--space-4);
+  top: var(--space-3);
+  z-index: calc(var(--z-intro) + 10);
+  padding: var(--space-3) var(--space-5);
+  background: var(--accent-fill);
+  color: var(--text-on-accent);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  transform: translateY(-160%);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.skip-link:focus { transform: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.prose { max-width: var(--prose-max); }
+.prose > * + * { margin-top: var(--space-4); }
+.stack > * + * { margin-top: var(--space-4); }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--text-gold);
+}
+.eyebrow::before {
+  content: "";
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
+.lede {
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+  max-width: 38rem;
+}
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: var(--lh-tight);
+  letter-spacing: 0.01em;
+}
+.display em, .script {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text-accent);
+}
+.caps {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+.no-js .js-only { display: none !important; }
+.has-js .no-js-only { display: none !important; }
+
+/* ---- Scroll reveal (progressive enhancement: content visible without JS) - */
+.has-js [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity var(--dur-base) var(--ease-soft),
+    transform var(--dur-base) var(--ease-soft);
+  transition-delay: calc(var(--reveal-i, 0) * 40ms);
+}
+.has-js [data-reveal].is-revealed { opacity: 1; transform: none; }
+:root[data-motion="reduce"] [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}
+:root[data-motion="reduce"] *,
+:root[data-motion="reduce"] *::before,
+:root[data-motion="reduce"] *::after {
+  animation-duration: 1ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 1ms !important;
+}
